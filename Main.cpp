@@ -13,7 +13,7 @@ int main()
 
 	Shape & point = ShapesFabric::CreateShape(ShapesFabric::point_shape);
 
-	// Ошибка "нарушение доступа для чтения", убила кучу времени, но так и не поняла почему :(
+	// Error "Read Access violation error", spent a lot of time, but still have no idea why :(
 	point.print();
 
 	std::cout << Shape::GetCount() << "\n";

@@ -28,7 +28,7 @@ class Point : public Named, public Shape
 public:
 	Point() : Point(0, 0) {}
 	Point(double x, double y) : coordinate_x(x), coordinate_y(y), Named("Point") {}
-	Point(Point const & point) : Point(point.GetX(), point.GetY()) {} //конструктор копирования
+	Point(Point const & point) : Point(point.GetX(), point.GetY()) {}
 	double GetX(void) const
 	{
 		return coordinate_x;
